@@ -1,0 +1,96 @@
+@import './global-variables';
+
+// configs
+* {
+  font-size: size-text-desktop;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: primaryTextColor;
+  font-weight: weight-normal;
+  line-height: 25px; /* Small only */
+
+  @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+    font-size: size-text-mobile;
+    line-height: 23px;
+  }
+}
+
+.title-large {
+  font-size: size-title-large-desk;
+  color: primaryColor;
+  font-weight: weight-extra;
+  line-height: 51px;
+  font-family: 'Philosopher', sans-serif !important;
+
+  * {
+    font-weight: weight-strong;
+    font-family: 'Philosopher', sans-serif !important;
+    font-size: size-title-large-min-desk;
+    display: block;
+  }
+
+  @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+    font-size: size-title-large-mob;
+    line-height: 36px;
+  }
+}
+
+.title-large.min {
+  font-size: size-title-large-min-desk-2;
+  line-height: 37px;
+
+  @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+    font-size: size-title-large-mob;
+    line-height: 36px;
+  }
+}
+
+.title-sup {
+  color: primaryColor;
+  font-size: 14px;
+  font-weight: weight-strong;
+}
+
+.title {
+  font-family: 'Philosopher', sans-serif !important;
+  font-weight: weight-strong;
+  font-size: size-title-large-desk;
+
+  @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+    font-size: size-title-large-mob;
+    line-height: 36px;
+  }
+
+  * {
+    font-weight: weight-strong;
+    font-family: 'Philosopher', sans-serif !important;
+    font-size: size-title-large-min-desk;
+    display: block;
+
+    @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+      font-size: size-title-large-min-mob;
+      line-height: 36px;
+    }
+  }
+}
+
+.title-before {
+  position: relative;
+  height: 3px;
+  background: rgb(255, 203, 100);
+  background: linear-gradient(90deg, rgba(255, 203, 100, 1) 0%, rgba(255, 235, 195, 1) 46.8%, rgba(255, 203, 100, 1) 100%);
+  width: 161px;
+  display: block;
+  margin-top: 9px;
+  border-radius: 100px;
+
+  @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+    width: 138px;
+  }
+}
+
+.title-before.center-line {
+  margin: 0 auto;
+  margin-top: 9px;
+}

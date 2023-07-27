@@ -1,0 +1,59 @@
+@import '../global-variables';
+
+#page-404 {
+    #intro {
+        height: 592px;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        padding-top: 80px;
+
+        @media screen and (min-width: desktop-min) {
+            background: url('../../imgs/banner/bg-404.jpg');
+        }
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            background: url('../../imgs/banner/bg-404-mob.jpg');
+            height: 618px;
+            padding-top: 45px;
+            margin-bottom: 20px;
+        }
+
+        .title-large {
+            font-size: 242px;
+            line-height: 210px;
+
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                font-size: 148px;
+                line-height: 121px;
+            }
+        }
+
+        .title {
+            font-size: 45px;
+            color: primaryColor;
+            line-height: 50px;
+            display: block;
+            margin-bottom: 12px;
+
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                font-size: 27px;
+                line-height: 30px;
+            }
+        }
+
+        .button {
+            width: 268px;
+            height: 52px;
+            margin-top: 25px;
+        }
+
+        p {
+            br {
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

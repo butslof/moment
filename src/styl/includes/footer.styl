@@ -1,0 +1,123 @@
+#footer {
+  background-color: primaryColor;
+  font-size: 14px;
+  position: relative;
+  border-top: 1px solid #707070 !important;
+  margin-top: 38px;
+
+  * {
+    color: primaryTextColor;
+  }
+
+  /* Small only */
+  @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+    padding-top: 27px;
+    padding-bottom: 152px;
+    display: none;
+  }
+
+  .direitos {
+    background-color: primaryColor;
+    height: 40px;
+    padding-top: 9px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Small only */
+
+    @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+      padding-bottom: 110px;
+      padding-top: 31px;
+    }
+
+    * {
+      color: branco;
+    }
+
+    strong {
+      color: branco;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .col-img {
+      @media screen and (min-width: desktop-min) {
+        text-align: right;
+      }
+
+      padding: 0;
+    }
+  }
+
+  /* Small only */
+  @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+    padding-top: 0px;
+
+    .box-mobile {
+      .box {
+        a {
+          line-height: 18px;
+          display: block;
+          margin-bottom: 15px;
+          font-weight: weight-strong;
+
+          i {
+            display: block;
+            color: primaryColor;
+            font-size: 23px;
+            margin-bottom: 9px;
+          }
+        }
+      }
+
+      .box-redes {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        a {
+          border-radius: 3px;
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: secundaryColor;
+
+          i {
+            color: branco;
+          }
+        }
+      }
+
+      .box-end {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        .title-end {
+          font-size: 16px;
+          color: primaryColor;
+          font-weight: weight-strong;
+        }
+      }
+
+      .box-links {
+        display: flex;
+        justify-content: center;
+        gap: 11px;
+        margin-top: 41px;
+
+        .separador {
+          display: block;
+          margin-top: -4px;
+        }
+
+        * {
+          font-weight: weight-normal !important;
+        }
+      }
+    }
+  }
+}

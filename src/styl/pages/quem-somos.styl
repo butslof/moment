@@ -1,0 +1,120 @@
+@import '../global-variables';
+
+#quem-somos {
+    @import '../globals-sections/intro-page-header';
+
+    #intro-page-header {
+        @media screen and (min-width: desktop-min) {
+            background: url('../../imgs/banner/header-quem-somos.jpg');
+        }
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            background: url('../../imgs/banner/header-quem-somos-mob.jpg');
+            margin-bottom: 21px;
+            height: 157px;
+        }
+    }
+
+    .row-content-two-cols {
+        align-items: center;
+        margin-bottom: 28px;
+
+        .title-before {
+            width: 298px;
+
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                width: 188px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 16px;
+            }
+        }
+
+        .text-column {
+            margin-top: 20px;
+
+            p {
+                margin-bottom: 22px;
+            }
+        }
+
+        .img-destaque {
+            width: 651px;
+            height: 435px;
+            border-radius: 40px 5px;
+            object-fit: cover;
+
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                width: 100%;
+                height: 292px;
+                border-radius: 5px 40px;
+            }
+        }
+    }
+
+    #section-1 {
+        margin-bottom: 28px;
+
+        .row-intro {
+            .title-large {
+                max-width: 839px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            p {
+                max-width: 812px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .img-destaque {
+                width: 100%;
+                height: 375px;
+                border-radius: 5px 40px;
+                margin: 0 auto;
+                object-fit: cover;
+                margin-top: 10px;
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    width: 100%;
+                    height: 292px;
+                }
+            }
+        }
+    }
+
+    @import '../globals-sections/section-galeria';
+
+    #galeria-section {
+        margin-bottom: 48px;
+
+        @media screen and (min-width: desktop-min) {
+            margin-bottom: 112px;
+        }
+
+        .aspas {
+            margin-bottom: 19px;
+        }
+
+        .row-content {
+            margin-top: 0px;
+        }
+    }
+
+    #section-5 {
+        .title-before {
+            width: 212px;
+        }
+    }
+
+    #section-6 {
+        margin-bottom: 73px;
+
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            margin-bottom: 37px;
+        }
+    }
+
+    @import '../globals-sections/section-contact';
+}

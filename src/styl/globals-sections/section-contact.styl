@@ -1,0 +1,214 @@
+#entre-em-contato {
+    background-color: primaryColor;
+    padding-top: 60px;
+    padding-bottom: 67px;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+    @media screen and (min-width: desktop-min) {
+        background: url('../../imgs/banner/bg-contact-footer.jpg');
+        height: 751px;
+    }
+
+    @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+        background: url('../../imgs/banner/bg-contact-footer-mob.jpg');
+        padding-top: 41px;
+        padding-bottom: 108px;
+    }
+
+    .title-before {
+        @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .line-form {
+        --bs-gutter-x: 16px !important;
+    }
+
+    .column-direitos {
+        * {
+            color: branco;
+        }
+
+        @media screen and (min-width: desktop-min) {
+            display: none;
+        }
+    }
+
+    .link-privacy {
+        margin-top: 12px;
+    }
+
+    .col-text {
+        max-width: 595px;
+
+        .title-sup {
+            color: branco;
+        }
+
+        .title-large {
+            color: tertiaryColor;
+        }
+
+        .title-before {
+            margin-bottom: 18px;
+        }
+
+        * {
+            color: branco;
+        }
+
+        .text-intro {
+            max-width: 459px;
+        }
+
+        .box-contact {
+            @media screen and (min-width: desktop-min) {
+                display: flex;
+                gap: 47px;
+            }
+
+            .title {
+                font-size: 21px;
+                display: block;
+                margin-bottom: 10px;
+                font-weight: weight-strong;
+                line-height: 34px;
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    font-size: 16px;
+                    line-height: 21px;
+                }
+
+                span {
+                    font-weight: weight-strong;
+                    font-size: 29px;
+                }
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+
+            p {
+                max-width: 530px;
+            }
+
+            a {
+                font-weight: weight-extra;
+                font-size: 30px;
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    font-size: 23px;
+                    line-height: 28px;
+                }
+
+                * {
+                    font-size: 18px;
+                    font-weight: weight-strong;
+                }
+
+                i {
+                    font-size: 38px;
+                    vertical-align: middle;
+                    color: secundaryColor;
+
+                    @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                        font-size: 29px;
+                    }
+                }
+            }
+
+            .item {
+                margin-bottom: 26px;
+
+                img {
+                    margin-right: 3px;
+                }
+            }
+        }
+
+        form {
+            z-index: 1;
+            margin-top: 8px;
+
+            @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                margin-top: 28px;
+            }
+
+            div {
+                @media screen and (min-width: desktop-min) {
+                    margin: 0;
+                    gap: 15px;
+                    margin-bottom: 7px;
+                }
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    margin-bottom: 0px;
+                }
+            }
+
+            .button {
+                float: right;
+                color: primaryColor;
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    width: 100%;
+                    margin-top: 17px;
+                    margin-bottom: 23px;
+                }
+
+                i {
+                    margin-left: 3px;
+                    font-size: 19px;
+                    color: primaryColor;
+                }
+            }
+
+            textarea {
+                height: 172px;
+
+                @media screen and (min-width: mobile-min) and (max-width: tablet-max) {
+                    height: 111px;
+                }
+            }
+
+            p {
+                @media screen and (min-width: desktop-min) {
+                    float: left;
+                    width: 271px;
+                    font-size: 12px;
+                    width: 228px;
+                }
+
+                * {
+                    @media screen and (min-width: desktop-min) {
+                        font-size: 12px;
+                    }
+                }
+
+                .marcacao {
+                    font-weight: weight-strong;
+                    text-decoration: underline;
+                }
+            }
+
+            input {
+                height: 50px !important;
+            }
+        }
+    }
+
+    .col-img {
+        img {
+            margin-top: -99px;
+            margin-left: -1px;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
